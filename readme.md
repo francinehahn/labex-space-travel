@@ -1,32 +1,51 @@
+![labexCover](./src/img/labeXcover.png)
+
 # labeX
+This project was developed to practice the consumption of APIs. The API used was developed by Labenu for study purposes.
+The website has eight pages and three of them can only be accessed if the user is logged in.
+This project is responsive to all screen sizes.
 
-## Usuário e senha
-Usuário: fran_hahn@hotmail.com
-Senha: 123456
+## User and password
+User: fran_hahn@hotmail.com
+Password: 123456
 
-## Link do surge
-[Link surge](https://black-and-white-plot.surge.sh/)
+## Link to acess the project
+https://black-and-white-plot.surge.sh/
 
-## Funcionalidades
-* Oito páginas: home, login, página de viagens, página para inscrição em viagens, página administrativa, cadastro de viagens, detalhes das viagens e página de erros;
-* Parte pública: home, login, página de viagens, página para inscrição em viagens e página de erros;
-* Parte privada: página administrativa, cadastro de viagens e detalhes das viagens;
-* Sem fazer login, usuário pode ver a lista de viagens disponíveis e também realizar a incrição para qualquer uma delas;
-* Ao fazer login, usuário pode ver a lista de viagens e apagar qualquer uma delas e clicar nas viagens para ver os detalhes de cada uma;
-* Ao fechar a página, o usuário é deslogado automaticamente;
-* Projeto responsivo para todos os tamanhos de tela.
+## Functionalities
+* All users can access the available trips and also apply for any of them;
+* When the user logs in, they can include new trips to the list and also remove them;
+* In addition, the user can also see the trips' details including the list of applicants for each trip;
+* When there are applicants for a trip, the user can see the applicant's information and either accept or reject them;
+* When the user closes the window, the are automatically logged out.
 
-## Imagens
-![print-home](https://user-images.githubusercontent.com/102267713/186778317-ab811916-31ea-4e17-9143-6fb3593385e1.png)
+## Images
+### Desktop version
+![print-home](./src/img/print-home.png)
 
-![print-login](https://user-images.githubusercontent.com/102267713/186778360-77dba919-00d2-42e1-8dc1-c90dbe711940.png)
+![print-login](./src/img/print-login.png)
 
-![print-viagens](https://user-images.githubusercontent.com/102267713/186778377-46abda49-d841-4190-a152-e743cbd0af79.png)
+![print-viagens](./src/img/print-viagens.png)
 
-![print-admin](https://user-images.githubusercontent.com/102267713/186778402-912267e6-bc9e-44a1-92bc-7752ee481630.png)
+![print-admin](./src/img/print-admin.png)
 
-![print-criar-viagem](https://user-images.githubusercontent.com/102267713/186778604-5e31de05-d5a6-4774-8134-80fd7a1bb1e0.png)
+![print-criar-viagem](./src/img/print-criar-viagem.png)
 
-![print-detalhes-viagem](https://user-images.githubusercontent.com/102267713/186778427-6e40fb34-37a8-4290-9723-ba4c815480d6.png)
+![print-detalhes-viagem](./src/img/print-detalhes-viagem.png)
 
-![print-inscricao](https://user-images.githubusercontent.com/102267713/186778443-2bb6931d-1a47-4b2d-aeac-1b6b0cda3333.png)
+![print-inscricao](./src/img/print-inscricao.png)
+
+### Mobile version
+<img src="./src/img/print-mobile1" width="40%"/>
+<br>
+<img src="./src/img/print-mobile2" width="40%"/>
+<br>
+<img src="./src/img/print-mobile3" width="40%"/>
+<br>
+<img src="./src/img/print-mobile4" width="40%"/>
+<br>
+<img src="./src/img/print-mobile5" width="40%"/>
+<br>
+<img src="./src/img/print-mobile6" width="40%"/>
+<br>
+<img src="./src/img/print-mobile7" width="40%"/>
