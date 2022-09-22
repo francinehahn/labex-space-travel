@@ -19,6 +19,18 @@ https://black-and-white-plot.surge.sh/
 * When there are applicants for a trip, the user can see the applicant's information and either accept or reject them;
 * When the user closes the window, the are automatically logged out.
 
+## Installing
+<pre>
+  <code>
+    $ git clone https://github.com/francinehahn/labex-space-travel.git
+    cd labex-space-travel
+  </code>
+</pre>
+
+<pre>
+  <code>$ npm install</code>
+</pre>
+
 ## Images
 ### Desktop version
 ![print-home](./src/img/print-home.png)
