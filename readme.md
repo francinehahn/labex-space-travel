@@ -21,10 +21,11 @@ https://black-and-white-plot.surge.sh/
 
 ## Installing
 <pre>
-  <code>
-    $ git clone https://github.com/francinehahn/labex-space-travel.git
-    cd labex-space-travel
-  </code>
+  <code>$ git clone https://github.com/francinehahn/labex-space-travel.git</code>
+</pre>
+
+<pre>
+  <code>$ cd labex-space-travel</code>
 </pre>
 
 <pre>
