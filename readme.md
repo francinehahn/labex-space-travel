@@ -36,16 +36,16 @@ https://black-and-white-plot.surge.sh/
 ![print-inscricao](./src/img/print-inscricao.png)
 
 ### Mobile version
-<img src="./src/img/print-mobile1" width="40%"/>
+<img src="./src/img/print-mobile1.jpeg" width="40%"/>
 <br>
-<img src="./src/img/print-mobile2" width="40%"/>
+<img src="./src/img/print-mobile2.jpeg" width="40%"/>
 <br>
-<img src="./src/img/print-mobile3" width="40%"/>
+<img src="./src/img/print-mobile3.jpeg" width="40%"/>
 <br>
-<img src="./src/img/print-mobile4" width="40%"/>
+<img src="./src/img/print-mobile4.jpeg" width="40%"/>
 <br>
-<img src="./src/img/print-mobile5" width="40%"/>
+<img src="./src/img/print-mobile5.jpeg" width="40%"/>
 <br>
-<img src="./src/img/print-mobile6" width="40%"/>
+<img src="./src/img/print-mobile6.jpeg" width="40%"/>
 <br>
-<img src="./src/img/print-mobile7" width="40%"/>
+<img src="./src/img/print-mobile7.jpeg" width="40%"/>
