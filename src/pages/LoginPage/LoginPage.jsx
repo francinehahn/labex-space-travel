@@ -1,15 +1,15 @@
 import React, {useContext, useState} from "react"
 import axios from "axios"
-import { useForm } from "../../../hooks/useForm"
-import {urlBase} from '../../../constants/urlBase'
-import {Header} from '../../Header/Header'
+import { useForm } from "../../hooks/useForm"
+import {urlBase} from '../../constants/urlBase'
+import {Header} from '../../components/Header/Header'
 import {useNavigate} from 'react-router-dom'
 import {LoginSection, FormSection, Loading} from './style'
-import stars from '../../../img/stars.png'
-import user from '../../../img/user.png'
-import { AuthContext } from "../../../contexts/AuthContext"
-import loading from '../../../img/loading.png'
-import {goToAdmin} from '../../../coordinators/Coordinators'
+import stars from '../../img/stars.png'
+import user from '../../img/user.png'
+import { AuthContext } from "../../contexts/AuthContext"
+import loading from '../../img/loading.png'
+import {goToAdmin} from '../../coordinators/Coordinators'
 
 
 export function LoginPage() {

@@ -1,16 +1,16 @@
 import React, {useContext} from "react"
 import axios from 'axios'
 import { useParams, useNavigate } from "react-router-dom"
-import { useProtectedPage } from "../../../hooks/useProtectedPage";
-import { useRequestData } from "../../../hooks/useRequestData";
-import { urlBase } from "../../../constants/urlBase";
-import {Header} from '../../Header/Header'
-import {ApplicantsCard} from '../../ApplicantsCard/ApplicantsCard'
+import { useProtectedPage } from "../../hooks/useProtectedPage"
+import { useRequestData } from "../../hooks/useRequestData"
+import { urlBase } from "../../constants/urlBase"
+import { Header } from "../../components/Header/Header"
+import {ApplicantsCard} from '../../components/ApplicantsCard/ApplicantsCard'
 import {DetailsSection, PendingCandidates, ApprovedCandidates, Loading, GoBack} from './style'
-import { AuthContext } from "../../../contexts/AuthContext";
-import loading from '../../../img/loading.png'
-import rocket from '../../../img/rocket.png'
-import { ErrorPage } from "../ErrorPage/ErrorPage";
+import { AuthContext } from "../../contexts/AuthContext"
+import loading from '../../img/loading.png'
+import rocket from '../../img/rocket.png'
+import { ErrorPage } from "../ErrorPage/ErrorPage"
 
 
 

@@ -1,17 +1,17 @@
-import React, {useContext, useState} from "react";
-import axios from "axios";
+import React, {useContext, useState} from "react"
+import axios from "axios"
 import {useNavigate} from 'react-router-dom'
-import {Header} from '../../Header/Header'
+import {Header} from '../../components/Header/Header'
 import {BiggerContainer, AdminSection, ListTripsSection, ButtonSection, Loading} from './style'
-import planet from '../../../img/planet.png'
-import { useProtectedPage } from "../../../hooks/useProtectedPage";
-import { urlBase } from "../../../constants/urlBase";
-import { useRequestData } from "../../../hooks/useRequestData";
-import loading from '../../../img/loading.png'
-import iconDelete from '../../../img/iconDelete.png'
-import { AuthContext } from "../../../contexts/AuthContext";
-import { ErrorPage } from "../ErrorPage/ErrorPage";
-import {goToTripDetails, goToCreateTrip} from '../../../coordinators/Coordinators'
+import planet from '../../img/planet.png'
+import { useProtectedPage } from "../../hooks/useProtectedPage"
+import { urlBase } from "../../constants/urlBase"
+import { useRequestData } from "../../hooks/useRequestData"
+import loading from '../../img/loading.png'
+import iconDelete from '../../img/iconDelete.png'
+import { AuthContext } from "../../contexts/AuthContext"
+import { ErrorPage } from "../ErrorPage/ErrorPage"
+import {goToTripDetails, goToCreateTrip} from '../../coordinators/Coordinators'
 
 
 export function AdmPage() {

@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
 import axios from 'axios'
-import { useForm } from "../../../hooks/useForm";
-import { urlBase } from "../../../constants/urlBase";
-import {Header} from '../../Header/Header'
+import { useForm } from "../../hooks/useForm"
+import { urlBase } from "../../constants/urlBase"
+import {Header} from '../../components/Header/Header'
 import {ApplicationSection, Loading} from './style'
-import { useRequestData } from "../../../hooks/useRequestData";
-import moon from '../../../img/moon.png'
-import moonTablet from '../../../img/moon-tablet.png'
-import moonMobile from '../../../img/moon-mobile.png'
-import { countries } from "../../../constants/countries";
-import loading from '../../../img/loading.png'
+import { useRequestData } from "../../hooks/useRequestData"
+import moon from '../../img/moon.png'
+import moonTablet from '../../img/moon-tablet.png'
+import moonMobile from '../../img/moon-mobile.png'
+import { countries } from "../../constants/countries"
+import loading from '../../img/loading.png'
 
 
 

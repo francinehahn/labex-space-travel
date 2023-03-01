@@ -1,11 +1,11 @@
-import React from "react";
-import { urlBase } from "../../../constants/urlBase";
-import { Header } from "../../Header/Header";
-import { Container, Loading } from "./style";
-import {useRequestData} from '../../../hooks/useRequestData'
-import launch2 from '../../../img/launch2.jpg'
-import loading from '../../../img/loading.png'
-import { ErrorPage } from "../ErrorPage/ErrorPage";
+import React from "react"
+import { urlBase } from "../../constants/urlBase"
+import { Header } from "../../components/Header/Header"
+import { Container, Loading } from "./style"
+import {useRequestData} from '../../hooks/useRequestData'
+import launch2 from '../../img/launch2.jpg'
+import loading from '../../img/loading.png'
+import { ErrorPage } from "../ErrorPage/ErrorPage"
 
 
 export function ListTripsPage() {

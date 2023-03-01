@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
 import axios from 'axios'
 import {useNavigate} from 'react-router-dom'
-import {Header} from '../../Header/Header'
+import {Header} from '../../components/Header/Header'
 import {CreateTripSection, GoBack, Loading} from './style'
-import { useForm } from "../../../hooks/useForm";
-import planet from '../../../img/planet.png'
-import { useProtectedPage } from "../../../hooks/useProtectedPage";
-import { urlBase } from "../../../constants/urlBase";
-import loading from '../../../img/loading.png'
+import { useForm } from "../../hooks/useForm"
+import planet from '../../img/planet.png'
+import { useProtectedPage } from "../../hooks/useProtectedPage"
+import { urlBase } from "../../constants/urlBase"
+import loading from '../../img/loading.png'
 
 
 export function CreateTripPage() {

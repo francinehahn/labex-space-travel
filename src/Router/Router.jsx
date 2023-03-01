@@ -1,13 +1,13 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { AdmPage } from "../components/Pages/AdmPage/AdmPage";
-import { CreateTripPage } from "../components/Pages/CreateTripPage/CreateTripPage";
-import {HomePage} from '../components/Pages/HomePage/HomePage';
-import { LoginPage } from "../components/Pages/LoginPage/LoginPage";
-import { ApplicationPage } from "../components/Pages/ApplicationPage/ApplicationPage";
-import { TripDetailsPage } from "../components/Pages/TripDetailsPage/TripDetailsPage";
-import { ListTripsPage } from "../components/Pages/ListTripsPage/ListTripsPage";
-import { ErrorPage } from "../components/Pages/ErrorPage/ErrorPage";
+import React from "react"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { AdmPage } from "../pages/AdmPage/AdmPage"
+import { CreateTripPage } from "../pages/CreateTripPage/CreateTripPage"
+import {HomePage} from '../pages/HomePage/HomePage'
+import { LoginPage } from "../pages/LoginPage/LoginPage"
+import { ApplicationPage } from "../pages/ApplicationPage/ApplicationPage"
+import { TripDetailsPage } from "../pages/TripDetailsPage/TripDetailsPage"
+import { ListTripsPage } from "../pages/ListTripsPage/ListTripsPage"
+import { ErrorPage } from "../pages/ErrorPage/ErrorPage"
 
 
 export function Router() {
