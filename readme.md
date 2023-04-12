@@ -10,7 +10,7 @@ User: fran_hahn@hotmail.com
 Password: 123456
 
 ## Link to acess the project
-https://black-and-white-plot.surge.sh/
+https://wooden-toe.surge.sh/
 
 ## Functionalities
 * All users can access the available trips and also apply for any of them;

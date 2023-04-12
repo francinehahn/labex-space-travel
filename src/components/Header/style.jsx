@@ -47,10 +47,12 @@ export const MenuMobile = styled.div `
     @media screen and (min-width: 640px) {
         display: none;
     }
+    
     @media screen and (min-width: 320px) and (max-width: 640px) {
         width: 40px;
         height: 30px;
         margin-right: 20px;
+
         div {
             div {
                 background-color: white;
@@ -59,6 +61,7 @@ export const MenuMobile = styled.div `
                 margin: 6px auto;
             }
         }
+
         section {
             position: absolute;
             left: 0;
@@ -67,6 +70,7 @@ export const MenuMobile = styled.div `
             height: 100vh;
             background-color: black;
             padding-top: 5vh;
+
             nav {
                 text-align: center;
                 margin-top: 5vh;
@@ -79,11 +83,13 @@ export const MenuMobile = styled.div `
                     font-size: 1.4em;
                 }
             }
-            div {
+
+            span {
                 display: flex;
                 justify-content: flex-end;
                 margin-right: 11vw;
                 margin-top: -1.2vh;
+
                 button {
                     padding: 1vh 2.5vw;
                 }

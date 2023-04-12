@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 
 export const DetailsSection = styled.section `
@@ -22,7 +22,6 @@ export const DetailsSection = styled.section `
     }
 `
 
-
 export const PendingCandidates = styled.section `
     display: flex;
     flex-direction: column;
@@ -30,6 +29,7 @@ export const PendingCandidates = styled.section `
     justify-content: center;
     border-top: 1px solid white;    
     border-bottom: 1px solid white;
+
     @media screen and (min-width: 1000px) {
         margin: 0 15vw;
     }
@@ -39,6 +39,7 @@ export const PendingCandidates = styled.section `
     @media screen and (min-width: 320px) and (max-width: 600px) {
         margin: 0 8vw;
     }
+
     h2 {
         color: white;
         text-align: center;
@@ -54,13 +55,13 @@ export const PendingCandidates = styled.section `
     }
 `
 
-
 export const ApprovedCandidates = styled.section `
     div {
         display: flex;
         align-items: baseline;
         justify-content: center;
         gap: 1vw;
+
         h2 {
             color: white;
             text-align: center;
@@ -71,6 +72,7 @@ export const ApprovedCandidates = styled.section `
                 margin-bottom: 3%;
             }
         }
+
         img {
             @media screen and (min-width: 1100px) {
                 width: 3%;
@@ -122,7 +124,6 @@ export const GoBack = styled.button `
     }
 `
 
-
 export const Loading = styled.img `
     display: block;
     margin: 24vh auto;
@@ -133,9 +134,9 @@ export const Loading = styled.img `
     animation: rotate 1s infinite;
 
     @media screen and (min-width: 1000px) {
-        width: 5%;
+        width: 4%;
     }
     @media screen and (min-width: 320px) and (max-width: 1000px) {
-        width: 15%;
+        width: 14%;
     }
 `

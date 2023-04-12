@@ -15,11 +15,9 @@ import loading from '../../img/loading.png'
 
 export function ApplicationPage() {
     const [isLoading, setIsLoading] = useState(false)
-    const [form, onChange, clear] = useForm({name: "", age: "", text: "", profession: "", country: "", tripId: ""})
+    const [form, onChange] = useForm({name: "", age: "", text: "", profession: "", country: "", tripId: ""})
     const [data] = useRequestData(`${urlBase}trips`)
     
-
-    //Submitting the form
     const handleSubmit = (e) => {
         e.preventDefault()
         setIsLoading(true)
@@ -39,13 +37,12 @@ export function ApplicationPage() {
             setIsLoading(false)
             alert(`Ocorreu um erro: ${err}`)
         })
-
-       clear()
     }
 
     return (
         <ApplicationSection backgroundL={moon} backgroundM={moonTablet} backgroundS={moonMobile}>
             <Header/>
+            
             <section>
                 <h1>Inscreva-se para uma viagem</h1>
 

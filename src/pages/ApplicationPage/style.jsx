@@ -16,61 +16,54 @@ export const ApplicationSection = styled.section `
     min-height: 100vh;
   
     section {
-        display: block;
-        margin: 0 auto;
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+
         h1 {
             text-align: center;
             color: white;
-            @media screen and (min-width: 1200px) {
-                margin: 3% 0 2% 0;
-            }
-            @media screen and (min-width: 1000px) and (max-width: 1200px) {
-                margin: 10% 0 2% 0;
-            }
-            @media screen and (min-width: 800px) and (max-width: 1000px) {
-                margin: 15% 0 2% 0;
-            }
-            @media screen and (min-width: 320px) and (max-width: 800px) {
-                margin: 10% 0 5% 0;
-            }
+            margin: 5vh;
         }
+
         form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            border: 3px solid white;
+            background-color: white;
             margin: 0 auto;
+
             @media screen and (min-width: 1200px) {
-                width: 35vw;
+                width: 34vw;
             }
             @media screen and (min-width: 900px) and (max-width: 1200px) {
-                width: 50vw;
+                width: 49vw;
             }
             @media screen and (min-width: 500px) and (max-width: 900px) {
-                width: 70vw;
+                width: 69vw;
             }
-            @media screen and (min-width: 320px) and (max-width: 500px) {
-                width: 80vw;
+            @media screen and (max-width: 500px) {
+                width: 79vw;
             }
+
             input, textarea {
-                padding: 2%;
-                border: 1px solid lightgrey;
-                width: 95.5%;
-                font-family: 'roboto';
-                font-size: 16px;
+                width: 97%;
             }
+
+            select, button {
+                width: 100%;
+            }
+
+            input, textarea, select, button {
+                padding: 1vh .5vw;
+                border: 1px solid lightgrey;
+            }
+
             select {
                 color: grey;
             }
-            select, button {
-                padding: 2%;
-                border: 1px solid lightgrey;
-                width: 100%;
-            }
+
             button {
+                border: none;
                 :active {
-                    background-color: #ff6a00;
-                    color: white;
+                    background-color: #e2e2e2;
                 }
             }
         }
@@ -87,9 +80,9 @@ export const Loading = styled.img `
     animation: rotate 1s infinite;
 
     @media screen and (min-width: 1000px) {
-        width: 5%;
+        width: 4%;
     }
     @media screen and (min-width: 320px) and (max-width: 1000px) {
-        width: 15%;
+        width: 14%;
     }
 `

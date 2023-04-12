@@ -12,8 +12,9 @@ import loading from '../../img/loading.png'
 
 export function CreateTripPage() {
     useProtectedPage()
+
     const [isLoading, setIsLoading] = useState(false)
-    const [form, onChange, clear] = useForm({id: "", name: "", planet: "", 	date: "", description: "", durationInDays: ""})
+    const [form, onChange] = useForm({id: "", name: "", planet: "", 	date: "", description: "", durationInDays: ""})
     const navigate = useNavigate()
     
     //Getting the updated date
@@ -70,14 +71,12 @@ export function CreateTripPage() {
             setIsLoading(false)
             alert(`Houve um erro: ${err}`)
         })
-        
-        clear()
     }
-
 
     return (
         <CreateTripSection background={planet}>
             <Header/>
+            
             <h1>Criar Viagem</h1>
             <form onSubmit={handleCreateTrip}>
                 <input

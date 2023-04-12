@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 
 export const BiggerContainer = styled.section `
@@ -8,17 +8,18 @@ export const BiggerContainer = styled.section `
     padding-bottom: 4vh;
 `
 
-
 export const AdminSection = styled.section `
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2vh;
+
     h1 {
         text-align: center;
         color: white;
         margin: 5vh 1vw 2vh 1vw;
     }
+
     button {
         padding: 1.5vh 2vw;
         margin: .5vh 0;
@@ -32,7 +33,6 @@ export const AdminSection = styled.section `
     }
 `
 
-
 export const ListTripsSection = styled.section `
     height: 50vh;
     display: flex;
@@ -41,6 +41,7 @@ export const ListTripsSection = styled.section `
     margin-bottom: 5vh;
     padding-right: 1vw;
     overflow-y: scroll;
+
     ::-webkit-scrollbar-track {
         background-color: white;
     }
@@ -56,6 +57,7 @@ export const ListTripsSection = styled.section `
 export const ButtonSection = styled.section `
     display: flex;
     gap: 1%;
+
     button {
         background-color: transparent;
         border: 1px solid white;
@@ -108,7 +110,6 @@ export const ButtonSection = styled.section `
     }
 `
 
-
 export const Loading = styled.img `
     display: block;
     margin: 12vh auto;
@@ -118,9 +119,9 @@ export const Loading = styled.img `
     }
     animation: rotate 1s infinite;
     @media screen and (min-width: 1000px) {
-        width: 5%;
+        width: 4%;
     }
     @media screen and (min-width: 320px) and (max-width: 1000px) {
-        width: 15%;
+        width: 14%;
     }
 `

@@ -15,13 +15,14 @@ import {goToAdmin} from '../../coordinators/Coordinators'
 export function LoginPage() {
     const {setLogin} = useContext(AuthContext)
     const [isLoading, setIsLoading] = useState(false)
-    const [form, onChange, clear] = useForm({email: "", password: ""})    
+    const [form, onChange] = useForm({email: "", password: ""})    
     const navigate = useNavigate()
 
     //When the user clicks on the login button
     const handleLogin = (e) => {
         e.preventDefault()
         setIsLoading(true)
+
         axios.post(`${urlBase}login`, form).then(response => {
             setIsLoading(false)
             localStorage.setItem("token", response.data.token)
@@ -31,8 +32,6 @@ export function LoginPage() {
             setIsLoading(false)
             alert(`Houve um erro: ${err}`)
         })
-        
-        clear()
     }
 
     return (

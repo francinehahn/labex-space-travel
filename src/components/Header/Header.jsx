@@ -1,8 +1,8 @@
-import React, {useContext, useState} from "react";
+import React, {useContext, useState} from "react"
 import {HeaderSection, MenuMobile} from './style'
 import {Link} from 'react-router-dom'
 import logo from '../../img/labex.png'
-import { AuthContext } from "../../contexts/AuthContext";
+import { AuthContext } from "../../contexts/AuthContext"
 
 
 
@@ -15,7 +15,6 @@ export function Header() {
         setLogin(false)
         localStorage.clear()
     }
-
 
     //Navigation
     const nav = () => {
@@ -34,9 +33,11 @@ export function Header() {
     return (
         <HeaderSection>
             <img src={logo} alt={'Logo da Labex'}/>
+            
             <nav>
                 {nav()}
             </nav>
+
             <MenuMobile>
                 <div onClick={() => setShowMenu(true)}>
                     <div></div>
@@ -45,9 +46,9 @@ export function Header() {
                 </div>
                 {showMenu && (
                     <section>
-                        <div>
+                        <span>
                             <button onClick={() => setShowMenu(false)}>X</button>
-                        </div>
+                        </span>
                         <nav>{nav()}</nav>
                     </section>
                 )}

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 
 export const LoginSection = styled.section `
@@ -21,60 +21,68 @@ export const FormSection = styled.section `
     justify-content: center;
     margin: 7vh auto 0 auto;
     background-color: #f5f5f5;
-    padding: 11vh 4vw;
     border-radius: 5px;
+
     @media screen and (min-width: 1200px) {
+        padding: 10vh 3vw;
         width: 18vw;
     }
     @media screen and (min-width: 900px) and (max-width: 1200px) {
+        padding: 10vh 3vw;
         width: 25vw;
     }
     @media screen and (min-width: 700px) and (max-width: 900px) {
+        padding: 10vh 5vw;
         width: 40vw;
     }
     @media screen and (min-width: 500px) and (max-width: 700px) {
+        padding: 10vh 5vw;
         width: 50vw;
     }
-    @media screen and (min-width: 320px) and (max-width: 500px) {
+    @media screen and (max-width: 500px) {
+        padding: 6vh 8vw;
         width: 70vw;
     }
+
     img {
         width: 30%;
         margin-bottom: 6vh;
     }
+
     form {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 2vh;
         margin: 3vh 0;
-        @media screen and (min-width: 900px) {
-            width: 100%;
-        }
-        @media screen and (min-width: 320px) and (max-width: 900px) {
-            width: 90%;
-        }
+        width: 100%;
+
         input {
             padding: 1.2vh .5vw;
-            width: 100%;
             background-color: transparent;
             border: 1px solid grey;
+            width: 100%;
         }
+
         button {
             padding: 1.2vh 0;
             background-color: transparent;
             border: 1px solid grey;
-            @media screen and (min-width: 1200px) {
-                width: 107%;
+            width: 106%;
+            :hover {
+                background-color: #e9e9e9;
             }
-            @media screen and (min-width: 900px) and (max-width: 1200px) {
+            @media screen and (min-width: 1200px) and (max-width: 1400px) {
                 width: 105%;
             }
-            @media screen and (min-width: 320px) and (max-width: 900px) {
+            @media screen and (min-width: 900px) and (max-width: 1200px) {
                 width: 104%;
             }
-            :hover {
-                background-color: white;
+            @media screen and (min-width: 600px) and (max-width: 900px) {
+                width: 103%;
+            }
+            @media screen and (max-width: 600px) {
+                width: 102%;
             }
         }
     }
@@ -91,9 +99,9 @@ export const Loading = styled.img `
     animation: rotate 1s infinite;
 
     @media screen and (min-width: 1000px) {
-        width: 5%;
+        width: 4%;
     }
     @media screen and (min-width: 320px) and (max-width: 1000px) {
-        width: 15%;
+        width: 14%;
     }
 `
