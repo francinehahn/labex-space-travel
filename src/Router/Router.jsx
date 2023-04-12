@@ -7,7 +7,6 @@ import { LoginPage } from "../pages/LoginPage/LoginPage"
 import { ApplicationPage } from "../pages/ApplicationPage/ApplicationPage"
 import { TripDetailsPage } from "../pages/TripDetailsPage/TripDetailsPage"
 import { ListTripsPage } from "../pages/ListTripsPage/ListTripsPage"
-import { ErrorPage } from "../pages/ErrorPage/ErrorPage"
 
 
 export function Router() {
@@ -21,7 +20,6 @@ export function Router() {
                 <Route path="/criar-viagem" element={<CreateTripPage/>}/>
                 <Route path="/lista-de-viagens" element={<ListTripsPage/>}/>
                 <Route path="/detalhes-da-viagem/:details" element={<TripDetailsPage/>}/>
-                <Route path="/erro" element={<ErrorPage/>}/>
             </Routes>
         </BrowserRouter>
     )

@@ -1,11 +1,10 @@
 import React from "react"
 import { urlBase } from "../../constants/urlBase"
 import { Header } from "../../components/Header/Header"
-import { Container, Loading } from "./style"
+import { Container } from "./style"
 import {useRequestData} from '../../hooks/useRequestData'
 import launch2 from '../../img/launch2.jpg'
-import loading from '../../img/loading.png'
-import { ErrorPage } from "../ErrorPage/ErrorPage"
+import { Loading } from "../../components/Loading/Loading"
 
 
 export function ListTripsPage() {
@@ -29,13 +28,13 @@ export function ListTripsPage() {
         <Container background={launch2}>
             <Header/>
             <h1>Lista de viagens</h1>
-            {isLoading && <Loading src={loading} alt={'Ícone de um círculo rodando'}/>}
+            {isLoading && <Loading/>}
 
             <ul>
                 {!isLoading && data && renderTrips}
             </ul>
 
-            {!isLoading && error && <ErrorPage error={error}/>}
+            {!isLoading && error && <span>{error}</span>}
         </Container>
     )
 }

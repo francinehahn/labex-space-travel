@@ -6,21 +6,19 @@ import { useRequestData } from "../../hooks/useRequestData"
 import { urlBase } from "../../constants/urlBase"
 import { Header } from "../../components/Header/Header"
 import {ApplicantsCard} from '../../components/ApplicantsCard/ApplicantsCard'
-import {DetailsSection, PendingCandidates, ApprovedCandidates, Loading, GoBack} from './style'
 import { AuthContext } from "../../contexts/AuthContext"
-import loading from '../../img/loading.png'
 import rocket from '../../img/rocket.png'
-import { ErrorPage } from "../ErrorPage/ErrorPage"
-
+import { Loading } from "../../components/Loading/Loading"
+import { ApprovedCandidates, DetailsSection, GoBack, PendingCandidates } from "./style"
 
 
 export function TripDetailsPage() {
     useProtectedPage()
+
     const {details} = useContext(AuthContext)
     const pathParams = useParams()
     const tripName = pathParams.details
     const navigate = useNavigate()
-
 
     //Request for travel details
     const [data, isLoading, error, updateData, setUpdateData] = useRequestData(`${urlBase}trip/${details}`, {
@@ -29,42 +27,27 @@ export function TripDetailsPage() {
         }
     })
 
-
     //Candidate approval
-    const handleApprove = (candidateId) => {
+    const handleApproval = (candidateId, approval) => {
         const body = {
-            approve: true
+            approve: approval? true : false
         }
         axios.put(`${urlBase}trips/${details}/candidates/${candidateId}/decide`, body, {
             headers: {
                 auth: localStorage.getItem("token")
             }
         }).then(() => {
-            alert('Candidato aprovado!')
             setUpdateData(!updateData)
-        }).catch((err) => alert(`Houve um erro: ${err}`))
-    }
-    
-
-    //Candidate disapproval
-    const handleDisapprove = (candidateId) => {
-        const body = {
-            approve: false
-        }
-        axios.put(`${urlBase}trips/${details}/candidates/${candidateId}/decide`, body, {
-            headers: {
-                auth: localStorage.getItem("token")
-            }
-        }).then(() => {
-            alert('Candidato reprovado!')
-            setUpdateData(!updateData)
+            approval? alert('Candidato aprovado!') : alert('Candidato reprovado!')
         }).catch((err) => alert(`Houve um erro: ${err}`))
     }
 
     return (
         <DetailsSection>
             <Header/>
-            {isLoading && <Loading src={loading} alt={'Ícone de um círculo rodando'}/>}
+
+            {isLoading && <Loading size="large"/>}
+
             {!isLoading && data && (
             <>
                 <section>
@@ -87,8 +70,8 @@ export function TripDetailsPage() {
                                     age={item.age}
                                     country={item.country}
                                     text={item.applicationText}
-                                    handleApprove={() => handleApprove(item.id)}
-                                    handleDisapprove={() => handleDisapprove(item.id)}
+                                    handleApprove={() => handleApproval(item.id, true)}
+                                    handleDisapprove={() => handleApproval(item.id, false)}
                                 />
                             )
                         })}
@@ -113,7 +96,8 @@ export function TripDetailsPage() {
                 </section>
             </>
             )}
-            {!isLoading && error && <ErrorPage error={error}/>}
+
+            {!isLoading && error && <span>{error}</span>}
         </DetailsSection>
     )
 }

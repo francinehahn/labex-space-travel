@@ -2,20 +2,20 @@ import React, {useContext, useState} from "react"
 import axios from "axios"
 import {useNavigate} from 'react-router-dom'
 import {Header} from '../../components/Header/Header'
-import {BiggerContainer, AdminSection, ListTripsSection, ButtonSection, Loading} from './style'
+import {BiggerContainer, AdminSection, ListTripsSection, ButtonSection} from './style'
 import planet from '../../img/planet.png'
 import { useProtectedPage } from "../../hooks/useProtectedPage"
 import { urlBase } from "../../constants/urlBase"
 import { useRequestData } from "../../hooks/useRequestData"
-import loading from '../../img/loading.png'
+import { Loading } from "../../components/Loading/Loading"
 import iconDelete from '../../img/iconDelete.png'
 import { AuthContext } from "../../contexts/AuthContext"
-import { ErrorPage } from "../ErrorPage/ErrorPage"
 import {goToTripDetails, goToCreateTrip} from '../../coordinators/Coordinators'
 
 
 export function AdmPage() {
     useProtectedPage()
+
     const [loadingData, setLoadingData] = useState(false)
     const navigate = useNavigate()
     const [data, isLoading, error, updateData, setUpdateData] = useRequestData(`${urlBase}trips`)
@@ -65,19 +65,20 @@ export function AdmPage() {
     return (
         <BiggerContainer background={planet}>
             <Header/>
+
             <AdminSection>
-                <h1>Bem vindo(a) ao painel administrativo</h1>
+                <h1>Painel administrativo</h1>
                 <button onClick={() => goToCreateTrip(navigate)}>Criar viagem</button>
-                {isLoading && <Loading src={loading} alt={'Ícone de um círculo rodando'}/>}
+                {isLoading && <Loading size="large"/>}
                 
                 {!isLoading && data && (
                     <ListTripsSection>
                         {data && data.trips && renderTrips}
-                        {loadingData && <Loading src={loading} alt={'Ícone de um círculo rodando'}/>}
+                        {loadingData && <Loading size="large"/>}
                     </ListTripsSection>
                 )}
 
-                {!isLoading && error && <ErrorPage error={error}/>}
+                {!isLoading && error && <span>{error}</span>}
             </AdminSection>
         </BiggerContainer>
     )

@@ -20,6 +20,11 @@ export const DetailsSection = styled.section `
             }
         }
     }
+
+    span {
+        color: red;
+        font-size: 16px;
+    }
 `
 
 export const PendingCandidates = styled.section `
@@ -43,15 +48,7 @@ export const PendingCandidates = styled.section `
     h2 {
         color: white;
         text-align: center;
-        @media screen and (min-width: 1200px) {
-            margin-bottom: 1.5%;
-        }
-        @media screen and (min-width: 600px) and (max-width: 1200px) {
-            margin-bottom: 1%;
-        }
-        @media screen and (min-width: 320px) and (max-width: 600px) {
-            margin-bottom: 3%;
-        }
+        margin-bottom: 4vh;
     }
 `
 
@@ -65,12 +62,7 @@ export const ApprovedCandidates = styled.section `
         h2 {
             color: white;
             text-align: center;
-            @media screen and (min-width: 600px) and (max-width: 1200px) {
-                margin-bottom: 1%;
-            }
-            @media screen and (min-width: 320px) and (max-width: 600px) {
-                margin-bottom: 3%;
-            }
+            margin: 4vh;
         }
 
         img {
@@ -100,7 +92,7 @@ export const ApprovedCandidates = styled.section `
     }
     
     ul {
-        margin: 2% 0;
+        margin: 1vh 0;
         list-style: square;
         display: flex;
         flex-direction: column;
@@ -121,22 +113,5 @@ export const GoBack = styled.button `
     :hover {
         background-color: white;
         color: black;
-    }
-`
-
-export const Loading = styled.img `
-    display: block;
-    margin: 24vh auto;
-    @keyframes rotate {
-        from {transform: rotate(0)}
-        to {transform: rotate(360deg)}
-    }
-    animation: rotate 1s infinite;
-
-    @media screen and (min-width: 1000px) {
-        width: 4%;
-    }
-    @media screen and (min-width: 320px) and (max-width: 1000px) {
-        width: 14%;
     }
 `

@@ -3,14 +3,13 @@ import axios from 'axios'
 import { useForm } from "../../hooks/useForm"
 import { urlBase } from "../../constants/urlBase"
 import {Header} from '../../components/Header/Header'
-import {ApplicationSection, Loading} from './style'
+import {ApplicationSection} from './style'
 import { useRequestData } from "../../hooks/useRequestData"
 import moon from '../../img/moon.png'
 import moonTablet from '../../img/moon-tablet.png'
 import moonMobile from '../../img/moon-mobile.png'
 import { countries } from "../../constants/countries"
-import loading from '../../img/loading.png'
-
+import {Loading} from "../../components/Loading/Loading"
 
 
 export function ApplicationPage() {
@@ -98,10 +97,8 @@ export function ApplicationPage() {
                         })}
                     </select>
 
-                    <button>Enviar</button>
+                    <button>{isLoading? <Loading size="small"/> : 'Enviar'}</button>
                 </form>
-                
-                {isLoading && <Loading src={loading} alt={'Ícone de um círculo rodando'}/>}
             </section>
         </ApplicationSection>
     )

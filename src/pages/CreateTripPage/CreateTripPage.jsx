@@ -2,12 +2,12 @@ import React, { useState } from "react"
 import axios from 'axios'
 import {useNavigate} from 'react-router-dom'
 import {Header} from '../../components/Header/Header'
-import {CreateTripSection, GoBack, Loading} from './style'
+import {CreateTripSection, GoBack} from './style'
 import { useForm } from "../../hooks/useForm"
 import planet from '../../img/planet.png'
 import { useProtectedPage } from "../../hooks/useProtectedPage"
 import { urlBase } from "../../constants/urlBase"
-import loading from '../../img/loading.png'
+import {Loading} from "../../components/Loading/Loading"
 
 
 export function CreateTripPage() {
@@ -126,10 +126,9 @@ export function CreateTripPage() {
                     onChange={onChange}
                     min={50}
                 />
-                <input type="submit" value={'Criar'}/>
+                <input type="submit" value={isLoading? <Loading size="small"/> : 'Criar'}/>
             </form>
 
-            {isLoading && <Loading src={loading} alt={'Ícone de um círculo rodando'}/>}
             <GoBack onClick={() => navigate(-1)}>Voltar</GoBack>
         </CreateTripSection>
     )

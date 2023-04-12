@@ -15,7 +15,7 @@ export function ApplicantsCard(props) {
             </ul>
             <section>
                 <button onClick={props.handleApprove}>Aprovar</button>
-                <button onClick={props.handleDisapprove}>Reprovar</button>
+                <button onClick={props.handleDisaprove}>Reprovar</button>
             </section>
         </BiggerContainer>
     )
