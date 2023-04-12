@@ -30,17 +30,15 @@ export const CreateTripSection = styled.section `
             width: 79vw;
         }
 
-        select, input, textarea, input:nth-child(6) {
+        select, input, textarea, button {
             border: 1px solid lightgrey;
             padding: 1.2vh .5vw;
         }
 
-        input {
-            :nth-child(6) {
-                cursor: pointer;
-                :active {
-                    background-color: #e2e2e2;
-                }
+        button {
+            cursor: pointer;
+            :active {
+                background-color: #e2e2e2;
             }
         }
     }

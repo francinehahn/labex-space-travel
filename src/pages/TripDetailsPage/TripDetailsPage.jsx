@@ -9,7 +9,7 @@ import {ApplicantsCard} from '../../components/ApplicantsCard/ApplicantsCard'
 import { AuthContext } from "../../contexts/AuthContext"
 import rocket from '../../img/rocket.png'
 import { Loading } from "../../components/Loading/Loading"
-import { ApprovedCandidates, DetailsSection, GoBack, PendingCandidates } from "./style"
+import { DetailsSection, GoBack } from "./style"
 
 
 export function TripDetailsPage() {
@@ -27,6 +27,8 @@ export function TripDetailsPage() {
         }
     })
 
+    const tripDate = data && new Date(data.trip.date.split("/").reverse().join(","))
+
     //Candidate approval
     const handleApproval = (candidateId, approval) => {
         const body = {
@@ -39,7 +41,7 @@ export function TripDetailsPage() {
         }).then(() => {
             setUpdateData(!updateData)
             approval? alert('Candidato aprovado!') : alert('Candidato reprovado!')
-        }).catch((err) => alert(`Houve um erro: ${err}`))
+        }).catch((err) => alert(`Houve um erro: ${err.response.data.message}`))
     }
 
     return (
@@ -49,17 +51,17 @@ export function TripDetailsPage() {
             {isLoading && <Loading size="large"/>}
 
             {!isLoading && data && (
-            <>
                 <section>
-                    <section>
+                    <div id="tripInfo">
                         <h1>{tripName}</h1>
                         <p>DESCRIÇÃO: {data.trip.description}</p>
                         <p>PLANETA: {data.trip.planet}</p>
                         <p>DURAÇÃO: {data.trip.durationInDays} dias</p>
                         <p>DATA: {data.trip.date}</p>
-                    </section>
+                        {tripDate.valueOf() < new Date().valueOf() && <span>VIAGEM JÁ ACONTECEU</span>}
+                    </div>
                     
-                    <PendingCandidates>
+                    <div id="pendingCandidates">
                         <h2>Candidatos pendentes</h2>
                         {data.trip.candidates && data.trip.candidates.map(item => {
                             return (
@@ -76,9 +78,9 @@ export function TripDetailsPage() {
                             )
                         })}
                         {data.trip.candidates.length === 0 && <p>Não há candidatos para essa viagem.</p>}
-                    </PendingCandidates>
+                    </div>
                     
-                    <ApprovedCandidates>
+                    <div id="approvedCandidates">
                         <div>
                             <h2>Candidatos aprovados</h2>
                             <img src={rocket} alt={'Ícone de um foguete'}/>
@@ -88,13 +90,13 @@ export function TripDetailsPage() {
                             {data.trip.approved && data.trip.approved.map(item => {
                                 return <li key={item.id}>{item.name}</li>
                             })}
-                            {data.trip.approved.length === 0 && <p>Não há candidatos aprovados.</p>}
                         </ul>
-                    </ApprovedCandidates>
+
+                        {data.trip.approved.length === 0 && <p>Não há candidatos aprovados.</p>}
+                    </div>
 
                     <GoBack onClick={() => navigate(-1)}>Voltar</GoBack>
                 </section>
-            </>
             )}
 
             {!isLoading && error && <span>{error}</span>}

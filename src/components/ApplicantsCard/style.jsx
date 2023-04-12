@@ -1,37 +1,40 @@
 import styled from "styled-components";
 
 
-export const BiggerContainer = styled.section `
+export const BiggerContainer = styled.div `
     display: grid;
     grid-template-columns: 70% 30%;
+    gap: 2vw;
     background-color: transparent;
     border: 1px solid white;
-    box-shadow: 4px 4px 4px #0000001c;
+    padding: 3vh 2.5vw;
+    margin: 0 auto;
+
     @media screen and (min-width: 1100px) {
-        margin: 1% auto;
         width: 50%;
     }
     @media screen and (min-width: 600px) and (max-width: 1100px) {
-        margin: 1% auto;
         width: 70%;
     }
     @media screen and (min-width: 320px) and (max-width: 600px) {
-        margin: 1% 5%;
         width: 90%;
     }
+
     ul {
         list-style: none;
         li {
             color: white;
-            margin: 1vh 2vw;
+            line-height: 4vh;
         }
     }
-    section {
+
+    div {
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 3vh;
         margin-right: 2vw;
+
         button {
             border: 1px solid white;
             background-color: transparent;

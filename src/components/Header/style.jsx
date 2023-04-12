@@ -4,10 +4,11 @@ import styled from "styled-components";
 export const HeaderSection = styled.header `
     background-color: transparent;
     height: 10vh;
-    padding: 1% 5%;
+    padding: 1.2vh 5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     img{
         @media screen and (min-width: 1200px) {
             width: 8%;
@@ -25,10 +26,11 @@ export const HeaderSection = styled.header `
             width: 28%;
         }
     }
+
     nav {
         @media screen and (min-width: 640px) {
             display: flex;
-            gap: 5vw;
+            gap: 3.5vw;
             a {
                 color: white;
                 :hover {
@@ -51,7 +53,7 @@ export const MenuMobile = styled.div `
     @media screen and (min-width: 320px) and (max-width: 640px) {
         width: 40px;
         height: 30px;
-        margin-right: 20px;
+        margin: -1vh 20px 0 0;
 
         div {
             div {
@@ -91,7 +93,7 @@ export const MenuMobile = styled.div `
                 margin-top: -1.2vh;
 
                 button {
-                    padding: 1vh 2.5vw;
+                    padding: .5vh 2.5vw;
                 }
             }
         }

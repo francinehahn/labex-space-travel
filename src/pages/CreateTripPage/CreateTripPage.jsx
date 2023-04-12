@@ -14,7 +14,7 @@ export function CreateTripPage() {
     useProtectedPage()
 
     const [isLoading, setIsLoading] = useState(false)
-    const [form, onChange] = useForm({id: "", name: "", planet: "", 	date: "", description: "", durationInDays: ""})
+    const [form, onChange, clear] = useForm({id: "", name: "", planet: "", 	date: "", description: "", durationInDays: ""})
     const navigate = useNavigate()
     
     //Getting the updated date
@@ -66,10 +66,11 @@ export function CreateTripPage() {
             }
         }).then(() => {
             setIsLoading(false)
+            clear()
             alert('Sua viagem foi criada com sucesso!')
         }).catch(err => {
             setIsLoading(false)
-            alert(`Houve um erro: ${err}`)
+            alert(`Houve um erro: ${err.response.data.message}`)
         })
     }
 
@@ -126,7 +127,7 @@ export function CreateTripPage() {
                     onChange={onChange}
                     min={50}
                 />
-                <input type="submit" value={isLoading? <Loading size="small"/> : 'Criar'}/>
+                <button>{isLoading? <Loading size="small"/> : 'Criar'}</button>
             </form>
 
             <GoBack onClick={() => navigate(-1)}>Voltar</GoBack>

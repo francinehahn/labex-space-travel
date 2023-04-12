@@ -43,7 +43,7 @@ export function AdmPage() {
                 setUpdateData(!updateData)
             }).catch(err => {
                 setloadingData(false)
-                `Houve um erro: ${err}`
+                alert(`Houve um erro: ${err.response.data.message}`)
             })
         } else {
             setLoadingData(false)

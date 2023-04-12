@@ -10,7 +10,7 @@ User: fran_hahn@hotmail.com
 Password: 123456
 
 ## Link to acess the project
-https://wooden-toe.surge.sh/
+https://three-knife.surge.sh/
 
 ## Functionalities
 * All users can access the available trips and also apply for any of them;

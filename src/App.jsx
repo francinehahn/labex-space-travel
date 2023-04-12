@@ -1,6 +1,6 @@
 import React from 'react'
-import {Router} from './Router/Router'
-import {GlobalStyle, GeneralContainer} from './GlobalStyle'
+import {Router} from './router/Router'
+import {GlobalStyle} from './GlobalStyle'
 import { AuthContextProvider } from './contexts/AuthContext'
 
 
@@ -12,12 +12,12 @@ function App() {
   }
 
   return (
-    <GeneralContainer>
+    <>
       <GlobalStyle/>
       <AuthContextProvider>
         <Router/>
       </AuthContextProvider>
-    </GeneralContainer>
+    </>
   )
 }
 

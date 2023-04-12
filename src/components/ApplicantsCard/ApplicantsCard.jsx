@@ -13,10 +13,11 @@ export function ApplicantsCard(props) {
                 <li>PAÍS: {props.country}</li>
                 <li>TEXTO DE CANDIDATURA: {props.text}</li>
             </ul>
-            <section>
+
+            <div>
                 <button onClick={props.handleApprove}>Aprovar</button>
                 <button onClick={props.handleDisaprove}>Reprovar</button>
-            </section>
+            </div>
         </BiggerContainer>
     )
 }

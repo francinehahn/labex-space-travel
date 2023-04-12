@@ -14,9 +14,13 @@ import {Loading} from "../../components/Loading/Loading"
 
 export function ApplicationPage() {
     const [isLoading, setIsLoading] = useState(false)
-    const [form, onChange] = useForm({name: "", age: "", text: "", profession: "", country: "", tripId: ""})
+    const [form, onChange, clear] = useForm({name: "", age: "", text: "", profession: "", country: "", tripId: ""})
     const [data] = useRequestData(`${urlBase}trips`)
-    
+    const filterTrips = data && data.trips.filter(trip => {
+        const date = new Date(trip.date.split("/").reverse().join(","))
+        return date.valueOf() > new Date().valueOf()
+    })
+
     const handleSubmit = (e) => {
         e.preventDefault()
         setIsLoading(true)
@@ -31,10 +35,11 @@ export function ApplicationPage() {
 
         axios.post(`${urlBase}trips/${form.tripId}/apply`, body).then(() => {
             setIsLoading(false)
+            clear()
             alert("Sua inscrição foi concluída com sucesso!")
         }).catch(err => {
             setIsLoading(false)
-            alert(`Ocorreu um erro: ${err}`)
+            alert(`Ocorreu um erro: ${err.response.data.message}`)
         })
     }
 
@@ -48,7 +53,7 @@ export function ApplicationPage() {
                 <form onSubmit={handleSubmit}>
                     <select name="tripId" value={form.tripId} onChange={onChange} required>
                         <option>Escolha uma viagem</option>
-                        {data && data.trips && data.trips.map(item => {
+                        {data && filterTrips.map(item => {
                             return <option key={item.id} value={item.id}>{item.name}</option>
                         })}
                     </select>

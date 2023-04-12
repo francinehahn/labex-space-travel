@@ -30,7 +30,7 @@ export function LoginPage() {
             goToAdmin(navigate)
         }).catch(err => {
             setIsLoading(false)
-            alert(`Houve um erro: ${err}`)
+            alert(`Houve um erro: ${err.response.data.message}`)
         })
     }
 

@@ -29,11 +29,11 @@ export const Container = styled.section `
         row-gap: 4vh;
         margin: 0 4vw;
         
-        li {
+        div {
             display: flex;
             flex-direction: column;
-            background-color: #336a95;
-            box-shadow: 3px 3px 3px #07070734;
+            background-color: #336a95e1;
+            box-shadow: 4px 4px 4px #0707072b;
             padding: 4vh 2vw;
 
             h2, h3, p {
