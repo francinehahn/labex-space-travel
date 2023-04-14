@@ -53,7 +53,7 @@ export function TripDetailsPage() {
             {!isLoading && data && (
                 <section>
                     <div id="tripInfo">
-                        <h1>{tripName}</h1>
+                        <h2>{tripName}</h2>
                         <p>DESCRIÇÃO: {data.trip.description}</p>
                         <p>PLANETA: {data.trip.planet}</p>
                         <p>DURAÇÃO: {data.trip.durationInDays} dias</p>
@@ -62,7 +62,7 @@ export function TripDetailsPage() {
                     </div>
                     
                     <div id="pendingCandidates">
-                        <h2>Candidatos pendentes</h2>
+                        <h3>Candidatos pendentes</h3>
                         {data.trip.candidates && data.trip.candidates.map(item => {
                             return (
                                 <ApplicantsCard
@@ -82,7 +82,7 @@ export function TripDetailsPage() {
                     
                     <div id="approvedCandidates">
                         <div>
-                            <h2>Candidatos aprovados</h2>
+                            <h3>Candidatos aprovados</h3>
                             <img src={rocket} alt={'Ícone de um foguete'}/>
                         </div>
                         

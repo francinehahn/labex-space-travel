@@ -19,8 +19,8 @@ export function ListTripsPage() {
     const renderTrips = data && filterTrips.map(item => {
         return (
             <div key={item.id}>
-                <h2>{item.name}</h2>
-                <h3>{item.planet}</h3>
+                <h3>{item.name}</h3>
+                <h4>{item.planet}</h4>
                 <p>{item.description}</p>
                 <p>Duração: {item.durationInDays} dias</p>
                 <p>Data de embarque: {item.date}</p>
@@ -31,7 +31,7 @@ export function ListTripsPage() {
     return (
         <Container background={launch2}>
             <Header/>
-            <h1>Lista de viagens</h1>
+            <h2>Lista de viagens</h2>
             {isLoading && <Loading size="large"/>}
 
             <ul>

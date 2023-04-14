@@ -19,7 +19,7 @@ export const ApplicationSection = styled.section `
         display: flex;
         flex-direction: column;
 
-        h1 {
+        h2 {
             text-align: center;
             color: white;
             margin: 5vh;

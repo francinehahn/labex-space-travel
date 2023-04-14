@@ -5,7 +5,7 @@ import { urlBase } from "../../constants/urlBase"
 import {Header} from '../../components/Header/Header'
 import {ApplicationSection} from './style'
 import { useRequestData } from "../../hooks/useRequestData"
-import moon from '../../img/moon.png'
+import moon from '../../img/moon.jpg'
 import moonTablet from '../../img/moon-tablet.png'
 import moonMobile from '../../img/moon-mobile.png'
 import { countries } from "../../constants/countries"
@@ -48,7 +48,7 @@ export function ApplicationPage() {
             <Header/>
             
             <section>
-                <h1>Inscreva-se para uma viagem</h1>
+                <h2>Inscreva-se para uma viagem</h2>
 
                 <form onSubmit={handleSubmit}>
                     <select name="tripId" value={form.tripId} onChange={onChange} required>

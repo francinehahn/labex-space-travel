@@ -18,7 +18,7 @@ export const DetailsSection = styled.section `
             gap: 1vh;
             color: white;
 
-            h1 {
+            h2 {
                 margin-bottom: 2vh;
                 color: white;
                 text-align: center;
@@ -45,7 +45,7 @@ export const DetailsSection = styled.section `
             border-bottom: 1px solid white;
             padding: 6vh 0;
 
-            h2 {
+            h3 {
                 color: white;
                 margin-bottom: 2vh;
             }
@@ -67,7 +67,7 @@ export const DetailsSection = styled.section `
                 justify-content: center;
                 gap: 1vw;
 
-                h2 {
+                h3 {
                     color: white;
                     text-align: center;
                     margin: 4vh;

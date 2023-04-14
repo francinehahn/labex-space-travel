@@ -6,7 +6,7 @@ export const CreateTripSection = styled.section `
     background-size: cover;
     height: 100vh;
 
-    h1 {
+    h2 {
         text-align: center;
         color: white;
         margin: 4vh 2vh;

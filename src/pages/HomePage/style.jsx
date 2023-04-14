@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 
 export const BiggerContainer = styled.section `
@@ -7,7 +7,6 @@ export const BiggerContainer = styled.section `
     background-position: top;
     height: 100vh;
 `
-
 
 export const HomeSection = styled.section `
     display: flex;
@@ -55,7 +54,7 @@ export const HomeSection = styled.section `
                 margin-top: 120%;
             }
         }
-        h2 {
+        h3 {
             color: white;
         }
         button {

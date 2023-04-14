@@ -14,11 +14,11 @@ export function HomePage() {
             <Header/>
             <HomeSection>
                 <section>
-                    <h2>FAZER LOGIN</h2>
+                    <h3>FAZER LOGIN</h3>
                     <button onClick={() => goToLogin(navigate)}>Login</button>
                 </section>
                 <section>
-                    <h2>LISTA DE VIAGENS</h2>
+                    <h3>LISTA DE VIAGENS</h3>
                     <button onClick={() => goToTripsList(navigate)}>Viagens</button>
                 </section>
             </HomeSection>

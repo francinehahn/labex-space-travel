@@ -3,7 +3,7 @@ import axios from "axios"
 import {useNavigate} from 'react-router-dom'
 import {Header} from '../../components/Header/Header'
 import {BiggerContainer, AdminSection, ListTripsSection, ButtonSection} from './style'
-import planet from '../../img/planet.png'
+import planet from '../../img/planet.jpeg'
 import { useProtectedPage } from "../../hooks/useProtectedPage"
 import { urlBase } from "../../constants/urlBase"
 import { useRequestData } from "../../hooks/useRequestData"
@@ -67,7 +67,7 @@ export function AdmPage() {
             <Header/>
 
             <AdminSection>
-                <h1>Painel administrativo</h1>
+                <h2>Painel administrativo</h2>
                 <button onClick={() => goToCreateTrip(navigate)}>Criar viagem</button>
                 {isLoading && <Loading size="large"/>}
                 

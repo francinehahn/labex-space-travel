@@ -14,7 +14,7 @@ export const AdminSection = styled.section `
     align-items: center;
     gap: 2vh;
 
-    h1 {
+    h2 {
         text-align: center;
         color: white;
         margin: 5vh 1vw 2vh 1vw;

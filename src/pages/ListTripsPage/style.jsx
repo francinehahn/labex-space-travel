@@ -9,7 +9,7 @@ export const Container = styled.section `
     min-height: 130vh;
     padding-bottom: 4vh;
 
-    h1 {
+    h2 {
         text-align: center;
         color: white;
         margin: 5vh 0 7vh 0;
@@ -36,7 +36,7 @@ export const Container = styled.section `
             box-shadow: 4px 4px 4px #0707072b;
             padding: 4vh 2vw;
 
-            h2, h3, p {
+            h3, h4, p {
                 color: white;
                 margin-bottom: 1.5vh;
             }

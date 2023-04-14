@@ -40,7 +40,7 @@ export const GlobalStyle = createGlobalStyle `
             }
         }
 
-        h1 {
+        h2 {
             @media screen and (min-width: 1200px) {
                 font-size: 34px;
             }
@@ -52,7 +52,7 @@ export const GlobalStyle = createGlobalStyle `
             }
         }
 
-        h2 {
+        h3 {
             @media screen and (min-width: 1200px) {
                 font-size: 28px;
             }
