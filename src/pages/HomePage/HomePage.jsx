@@ -2,7 +2,7 @@ import React from "react"
 import { useNavigate } from "react-router-dom"
 import {Header} from '../../components/Header/Header'
 import {BiggerContainer, HomeSection} from './style'
-import launch from '../../img/launch.jpg'
+import launch from '../../images/launch.jpg'
 import {goToLogin, goToTripsList} from '../../coordinators/Coordinators'
 
 

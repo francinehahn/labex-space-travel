@@ -7,7 +7,7 @@ import { urlBase } from "../../constants/urlBase"
 import { Header } from "../../components/Header/Header"
 import {ApplicantsCard} from '../../components/ApplicantsCard/ApplicantsCard'
 import { AuthContext } from "../../contexts/AuthContext"
-import rocket from '../../img/rocket.png'
+import rocket from '../../images/rocket.png'
 import { Loading } from "../../components/Loading/Loading"
 import { DetailsSection, GoBack } from "./style"
 

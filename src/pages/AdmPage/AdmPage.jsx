@@ -3,12 +3,12 @@ import axios from "axios"
 import {useNavigate} from 'react-router-dom'
 import {Header} from '../../components/Header/Header'
 import {BiggerContainer, AdminSection, ListTripsSection, ButtonSection} from './style'
-import planet from '../../img/planet.jpeg'
+import planet from '../../images/planet.jpg'
 import { useProtectedPage } from "../../hooks/useProtectedPage"
 import { urlBase } from "../../constants/urlBase"
 import { useRequestData } from "../../hooks/useRequestData"
 import { Loading } from "../../components/Loading/Loading"
-import iconDelete from '../../img/iconDelete.png'
+import iconDelete from '../../images/iconDelete.png'
 import { AuthContext } from "../../contexts/AuthContext"
 import {goToTripDetails, goToCreateTrip} from '../../coordinators/Coordinators'
 

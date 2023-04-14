@@ -5,9 +5,9 @@ import { urlBase } from "../../constants/urlBase"
 import {Header} from '../../components/Header/Header'
 import {ApplicationSection} from './style'
 import { useRequestData } from "../../hooks/useRequestData"
-import moon from '../../img/moon.jpg'
-import moonTablet from '../../img/moon-tablet.jpg'
-import moonMobile from '../../img/moon-mobile.jpg'
+import moon from '../../images/moon.jpg'
+import moonTablet from '../../images/moon-tablet.jpg'
+import moonMobile from '../../images/moon-mobile.jpg'
 import { countries } from "../../constants/countries"
 import {Loading} from "../../components/Loading/Loading"
 
@@ -16,6 +16,7 @@ export function ApplicationPage() {
     const [isLoading, setIsLoading] = useState(false)
     const [form, onChange, clear] = useForm({name: "", age: "", text: "", profession: "", country: "", tripId: ""})
     const [data] = useRequestData(`${urlBase}trips`)
+
     const filterTrips = data && data.trips.filter(trip => {
         const date = new Date(trip.date.split("/").reverse().join(","))
         return date.valueOf() > new Date().valueOf()

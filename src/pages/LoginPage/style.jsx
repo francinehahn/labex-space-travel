@@ -5,6 +5,7 @@ export const LoginSection = styled.section `
     background-image: url(${props => props.background});
     background-size: cover;
     height: 100vh;
+    background-color: black;
 
     @keyframes starsAnimation {
         0% {background-size: 85%;}

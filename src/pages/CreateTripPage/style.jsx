@@ -5,6 +5,7 @@ export const CreateTripSection = styled.section `
     background-image: url(${props => props.background});
     background-size: cover;
     height: 100vh;
+    background-color: black;
 
     h2 {
         text-align: center;

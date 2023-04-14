@@ -5,8 +5,8 @@ import {urlBase} from '../../constants/urlBase'
 import {Header} from '../../components/Header/Header'
 import {useNavigate} from 'react-router-dom'
 import {LoginSection, FormSection} from './style'
-import stars from '../../img/stars.jpg'
-import user from '../../img/user.png'
+import stars from '../../images/stars.jpg'
+import user from '../../images/user.png'
 import { AuthContext } from "../../contexts/AuthContext"
 import {goToAdmin} from '../../coordinators/Coordinators'
 import { Loading } from "../../components/Loading/Loading"

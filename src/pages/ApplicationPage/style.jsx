@@ -1,7 +1,9 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 
 export const ApplicationSection = styled.section `
+    background-color: black;
+    
     @media screen and (min-width: 1280px) {
         background-image: url(${props => props.backgroundL});        
     }

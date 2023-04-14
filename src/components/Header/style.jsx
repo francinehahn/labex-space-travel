@@ -51,15 +51,14 @@ export const MenuMobile = styled.div `
     }
     
     @media screen and (min-width: 320px) and (max-width: 640px) {
-        width: 40px;
-        height: 30px;
         margin: -1vh 20px 0 0;
 
         div {
             div {
                 background-color: white;
                 height: 5px;
-                width: 100%;
+                width: 40px;
+                border-radius: 5px;
                 margin: 6px auto;
             }
         }

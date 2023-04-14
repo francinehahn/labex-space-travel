@@ -4,6 +4,7 @@ import styled from "styled-components"
 export const DetailsSection = styled.section `
     background-color: black;
     background-size: contain;
+    min-height: 100vh;
     
     section {
         padding: 3vh 5vw 5vh 5vw;

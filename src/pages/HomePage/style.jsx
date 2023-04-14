@@ -6,6 +6,7 @@ export const BiggerContainer = styled.section `
     background-size: cover;
     background-position: top;
     height: 100vh;
+    background-color: #15273c;
 `
 
 export const HomeSection = styled.section `

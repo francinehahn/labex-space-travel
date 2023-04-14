@@ -3,7 +3,7 @@ import { urlBase } from "../../constants/urlBase"
 import { Header } from "../../components/Header/Header"
 import { Container } from "./style"
 import {useRequestData} from '../../hooks/useRequestData'
-import launch2 from '../../img/launch2.jpg'
+import launch2 from '../../images/launch2.jpg'
 import { Loading } from "../../components/Loading/Loading"
 
 

@@ -8,6 +8,7 @@ export const Container = styled.section `
     background-repeat: repeat;
     min-height: 130vh;
     padding-bottom: 4vh;
+    background-color: #336a95e1;
 
     h2 {
         text-align: center;

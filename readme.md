@@ -10,7 +10,7 @@ User: fran_hahn@hotmail.com
 Password: 123456
 
 ## Link to acess the project
-https://three-knife.surge.sh/
+https://madly-thread.surge.sh/
 
 ## Functionalities
 * All users can access the available trips and also apply for any of them;

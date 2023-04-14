@@ -4,6 +4,7 @@ import styled from "styled-components"
 export const BiggerContainer = styled.section `
     background-image: url(${props => props.background});
     background-size: cover;
+    background-color: black;
     height: 96vh;
     padding-bottom: 4vh;
 `

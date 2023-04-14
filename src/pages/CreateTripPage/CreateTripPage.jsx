@@ -7,7 +7,7 @@ import { useForm } from "../../hooks/useForm"
 import { useProtectedPage } from "../../hooks/useProtectedPage"
 import { urlBase } from "../../constants/urlBase"
 import {Loading} from "../../components/Loading/Loading"
-import planet from '../../img/planet.jpg'
+import planet from '../../images/planet.jpg'
 
 
 export function CreateTripPage() {

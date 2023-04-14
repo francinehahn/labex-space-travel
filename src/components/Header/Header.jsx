@@ -1,9 +1,8 @@
 import React, {useContext, useState} from "react"
 import {HeaderSection, MenuMobile} from './style'
 import {Link} from 'react-router-dom'
-import logo from '../../img/labex.png'
+import logo from '../../images/labex.png'
 import { AuthContext } from "../../contexts/AuthContext"
-
 
 
 export function Header() {
