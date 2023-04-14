@@ -6,8 +6,8 @@ import {Header} from '../../components/Header/Header'
 import {ApplicationSection} from './style'
 import { useRequestData } from "../../hooks/useRequestData"
 import moon from '../../img/moon.jpg'
-import moonTablet from '../../img/moon-tablet.png'
-import moonMobile from '../../img/moon-mobile.png'
+import moonTablet from '../../img/moon-tablet.jpg'
+import moonMobile from '../../img/moon-mobile.jpg'
 import { countries } from "../../constants/countries"
 import {Loading} from "../../components/Loading/Loading"
 
