@@ -4,10 +4,10 @@ import {useNavigate} from 'react-router-dom'
 import {Header} from '../../components/Header/Header'
 import {CreateTripSection, GoBack} from './style'
 import { useForm } from "../../hooks/useForm"
-import planet from '../../img/planet.jpg'
 import { useProtectedPage } from "../../hooks/useProtectedPage"
 import { urlBase } from "../../constants/urlBase"
 import {Loading} from "../../components/Loading/Loading"
+import planet from '../../img/planet.jpg'
 
 
 export function CreateTripPage() {
