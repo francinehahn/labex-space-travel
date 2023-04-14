@@ -1,4 +1,4 @@
-![labexCover](./src/img/labeXcover.png)
+![labexCover](./src/images/labeXcover.png)
 
 # labeX
 This project was developed to practice the consumption of APIs. The API used was developed by Labenu for study purposes.
@@ -21,31 +21,31 @@ https://madly-thread.surge.sh/
 
 ## Images
 ### Desktop version
-![print-home](./src/img/print-home.png)
+![print-home](./src/images/print-home.png)
 
-![print-login](./src/img/print-login.png)
+![print-login](./src/images/print-login.png)
 
-![print-viagens](./src/img/print-viagens.png)
+![print-viagens](./src/images/print-viagens.png)
 
-![print-admin](./src/img/print-admin.png)
+![print-admin](./src/images/print-admin.png)
 
-![print-criar-viagem](./src/img/print-criar-viagem.png)
+![print-criar-viagem](./src/images/print-criar-viagem.png)
 
-![print-detalhes-viagem](./src/img/print-detalhes-viagem.png)
+![print-detalhes-viagem](./src/images/print-detalhes-viagem.png)
 
-![print-inscricao](./src/img/print-inscricao.png)
+![print-inscricao](./src/images/print-inscricao.png)
 
 ### Mobile version
-<img src="./src/img/print-mobile1.jpeg" width="40%"/>
+<img src="./src/images/print-mobile1.jpeg" width="35%"/>
 <br>
-<img src="./src/img/print-mobile2.jpeg" width="40%"/>
+<img src="./src/images/print-mobile2.jpeg" width="35%"/>
 <br>
-<img src="./src/img/print-mobile3.jpeg" width="40%"/>
+<img src="./src/images/print-mobile3.jpeg" width="35%"/>
 <br>
-<img src="./src/img/print-mobile4.jpeg" width="40%"/>
+<img src="./src/images/print-mobile4.jpeg" width="35%"/>
 <br>
-<img src="./src/img/print-mobile5.jpeg" width="40%"/>
+<img src="./src/images/print-mobile5.jpeg" width="35%"/>
 <br>
-<img src="./src/img/print-mobile6.jpeg" width="40%"/>
+<img src="./src/images/print-mobile6.jpeg" width="35%"/>
 <br>
-<img src="./src/img/print-mobile7.jpeg" width="40%"/>
+<img src="./src/images/print-mobile7.jpeg" width="35%"/>
